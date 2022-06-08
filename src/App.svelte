@@ -277,6 +277,6 @@
 	
 </style>
 <p>
-	Kalkulator BMI ma wygląd skopiowany z ikard.pl:<br>
+	Ten Kalkulator BMI, ma wygląd skopiowany z ikard.pl:<br>
 	<a href=https://www.ikard.pl/badanie-bmi.html target="about:_blank">https://www.ikard.pl/badanie-bmi.html</a>
 </p>
