@@ -4,7 +4,7 @@
 -->
 <script>
 	const tArr = [
-    ["poni|ej 16"," - wygBodzenie", 16], // mniej ni| 16
+    ["poni|ej 16"," - wygBodzenie", 16], // mniej ni|Â 16
     ["16 - 16.99"," - wychudzenie", 17], // mniej ni| 17
     ["17 - 18.49"," - niedowag", 18.5], // ...
     ["18.5 - 24.99"," - wag prawidBow", 25],
@@ -16,7 +16,7 @@
 	const bmi = (waga,wzrost)=> Math.round((waga/((wzrost/100)**2) + Number.EPSILON) * 100) / 100;
 	
 	let waga = null;
-	let wzrost = new URLSearchParams(location.search).wzrost||null;
+	let wzrost = new URLSearchParams(location.search).get("wzrost")||null;
 	let bmiRes = null;
 	let normaOd = null;
 	let normaDo = null;
@@ -47,7 +47,7 @@
 		
 		// wypisz prawidBowe granica wagi dla tego wzrostu
 		
-		// wpisz twój bmi, do elementu listy
+		// wpisz twÃ³j bmi, do elementu listy
 		// obok przycisku oblicz te| mo|e by
 		// i ile brakuje do nastpnej/poprzedniej granicy
 	}
@@ -74,7 +74,7 @@
 	<div class="center">
 	</div>
 	<div class="right">
-		<h5>Dla osób dorosBych<wbr> warto[ BMI wskazuje na:</h5>
+		<h5>Dla osÃ³b dorosBych<wbr> warto[ BMI wskazuje na:</h5>
 		<ul>
 			{#each tArr as l, i}
 			<li class:obecna={
