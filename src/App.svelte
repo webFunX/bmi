@@ -1,17 +1,17 @@
 <!-- 
-	Wygld skopiowany z tego Kalkulatora BMI:
+	Wygląd skopiowany z tego Kalkulatora BMI:
 	https://www.ikard.pl/badanie-bmi.html
 -->
 <script>
 	const tArr = [
-    ["poni|ej 16"," - wygBodzenie", 16], // mniej ni| 16
-    ["16 - 16.99"," - wychudzenie", 17], // mniej ni| 17
-    ["17 - 18.49"," - niedowag", 18.5], // ...
-    ["18.5 - 24.99"," - wag prawidBow", 25],
-    ["25.0 - 29.9"," - nadwag", 30],
-    ["30.0 - 34.99"," - I stopieD otyBo[ci", 35],
-    ["35.0 - 39.99"," - II stopieD otyBo[ci", 40],
-    ["od 40.0"," - otyBo[ skrajn", Infinity]
+    ["poniżej 16"," - wygłodzenie", 16], // mniej niż 16
+    ["16 - 16.99"," - wychudzenie", 17], // mniej niż 17
+    ["17 - 18.49"," - niedowagę", 18.5], // ...
+    ["18.5 - 24.99"," - wagę prawidłową", 25],
+    ["25.0 - 29.9"," - nadwagę", 30],
+    ["30.0 - 34.99"," - I stopień otyłości", 35],
+    ["35.0 - 39.99"," - II stopień otyłości", 40],
+    ["od 40.0"," - otyłość skrajną", Infinity]
 	];
 	const bmi = (waga,wzrost)=> Math.round((waga/((wzrost/100)**2) + Number.EPSILON) * 100) / 100;
 	
@@ -43,13 +43,13 @@
 		} else {
 			bmiRes = null;
 		}
-		// zaznacz na li[cie
+		// zaznacz na liście
 		
-		// wypisz prawidBowe granica wagi dla tego wzrostu
+		// wypisz prawidłowe granica wagi dla tego wzrostu
 		
 		// wpisz twój bmi, do elementu listy
-		// obok przycisku oblicz te| mo|e by
-		// i ile brakuje do nastpnej/poprzedniej granicy
+		// obok przycisku oblicz też może być
+		// i ile brakuje do następnej/poprzedniej granicy
 	}
 </script>
 <h2>Badanie BMI</h2>
@@ -63,9 +63,9 @@
 		<p class="p">
 		<input required min=1 step=1 bind:value={wzrost} placeholder="Wzrost"> <strong>cm</strong></p>
 		<button on:click={licz} style="margin:0px 0px 0px 0px;" disabled={!(waga>0 && wzrost>0)}>Oblicz</button>
-		<button on:click={czysc} style="margin:0px 0px 0px 0px;" disabled={!(waga!==null || wzrost!==null || bmiRes!==null)}>Wyczy[</button>
+		<button on:click={czysc} style="margin:0px 0px 0px 0px;" disabled={!(waga!==null || wzrost!==null || bmiRes!==null)}>Wyczyść</button>
 			<h5 hidden={bmiRes===null}><strong>Twoje BMI wynosi: </strong>{bmiRes}</h5>
-			<h5 hidden={bmiRes===null}><strong>PrawidBowa waga:</strong><br>
+			<h5 hidden={bmiRes===null}><strong>Prawidłowa waga:</strong><br>
 			{normaOd}	- {normaDo} kg
 			</h5>
 	</div>
@@ -74,7 +74,7 @@
 	<div class="center">
 	</div>
 	<div class="right">
-		<h5>Dla osób dorosBych<wbr> warto[ BMI wskazuje na:</h5>
+		<h5>Dla osób dorosłych<wbr> wartość BMI wskazuje na:</h5>
 		<ul>
 			{#each tArr as l, i}
 			<li class:obecna={
