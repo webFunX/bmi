@@ -1,4 +1,4 @@
-<!-- 
+<!--
 	Wygląd skopiowany z tego Kalkulatora BMI:
 	https://www.ikard.pl/badanie-bmi.html
 -->
@@ -138,7 +138,7 @@
 		color: #111111;
 		font-size: 16px;
 		margin-block-start: 1.67em;
-		margin-block-end: 1.67em;    	
+		margin-block-end: 1.67em;
 		margin-top: 10px;
     margin-bottom: 10px;
 	}
@@ -155,7 +155,7 @@
 			-webkit-appearance: none;
 			margin: 0;
 		} */
-
+		
 		/* Firefox */
 /* 		input[type=number] {
 			-moz-appearance: textfield;
@@ -274,5 +274,9 @@
 	.obecna {
 		 color: rgb(201, 18, 23)
 	}
-
+	
 </style>
+<p>
+	Kalkulator BMI ma wygląd skopiowany z ikard.pl:<br>
+	<a href=https://www.ikard.pl/badanie-bmi.html target="about:_blank">https://www.ikard.pl/badanie-bmi.html</a>
+</p>
