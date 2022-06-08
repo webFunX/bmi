@@ -53,7 +53,7 @@
 	}
 </script>
 <h2>Badanie BMI</h2>
-<div class="con">
+<div class="con" on:keydown={e=>e.key==="Enter"&&licz()}>
 	<div class="left">
 		<h5><strong>Oblicz swoje BMI</strong></h5>
 		<div style="padding-left: 10px;">
@@ -182,9 +182,9 @@
 		box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 		outline: none;
 	}
-	input::placeholder {
+	/* input::placeholder {
 		
-	}
+	} */
 	ul {
 		padding-left: 10px;
 		list-style: none;
@@ -279,4 +279,6 @@
 <p>
 	Ten Kalkulator BMI, ma wygląd skopiowany z ikard.pl:<br>
 	<a href=https://www.ikard.pl/badanie-bmi.html target="about:_blank">https://www.ikard.pl/badanie-bmi.html</a>
+	<br>
+	Wykonany w <a href="https://svelte.dev/">SvelteJS</a>
 </p>
